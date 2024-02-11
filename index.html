@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container | d-flex flex-column align-items-center justify-content-center gap-1">
+        <h1>Rock Paper Scissor Game</h1>
+        <h2 class="js-game-count"></h2>
+        <h2 class="js-tie"></h2>
+        <div class="buttons-option | d-flex gap-2">
+            <button class="p-4" onclick="playGame('rock')"><img src="images/rock-emoji.png" alt=""></button>
+            <button class="p-4" onclick="playGame('paper')"><img src="images/paper-emoji.png" alt=""></button>
+            <button class="p-4" onclick="playGame('scissors')"><img src="images/scissors-emoji.png" alt=""></button>
+        </div>
+
+        <div class="js-results">Computer wins</div>
+       
+        <div class="pick-result | d-flex">
+            <div class="player | d-flex align-items-center">
+                <p class="js-player-score"></p>
+            <img src="images/paper-emoji.png" alt="" class="js-player-pick">
+            </div>
+            <div class="computer | d-flex align-items-center">
+                <img src="images/paper-emoji.png" alt="" class="js-computer-pick">
+                <p class="js-computer-score"></p>
+            </div>
+        </div>
+        
+        <button class="reset-button | p-3" onclick="resetGame()">Reset Game</button>
+    </div>
+    
+    <!-- Game Logic in JavaScript -->
+    <script src="main.js"></script>
+
+</body>
+</html>

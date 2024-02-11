@@ -1,0 +1,174 @@
+:root {
+
+    /* Custom color properties */
+    --clr-neutral-100: whitesmoke;
+    --clr-neutral-200: #6d6d6d;
+    --clr-neutral-900: #1D1D1D;
+
+    /* Custom font family properties */
+    --ff-primary: 'Poppins', sans-serif;
+    --ff-secondary: 'Poppins', sans-serif;
+
+    /* Custom font weight properties */
+    --fw-400: 400;
+    --fw-600: 600;
+    --fw-700: 700;
+
+    /* Custom font size properties */
+    --fs-300: 0.75rem;
+    --fs-400: 1rem;
+    --fs-500: 1.25rem;
+    --fs-600: 1.5rem;
+    --fs-700: 1.75rem;
+    --fs-800: 2rem;
+    --fs-900: 2.25rem;
+
+    --btn-primary: var(--btn-primary);
+    --bg-primary: var(--clr-neutral-900);
+}
+
+/* Default style*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+
+    /* Default font family */
+    /* Change this font family */
+    font-family: var(--ff-primary);
+}
+
+html, body {
+    width: 100%;
+    height: 100vh;
+    color: #FFF;
+    background: var(--bg-primary);
+}
+
+/* Utility Styling */
+.bg-primary {
+    background: var(--bg-primary);
+}
+
+
+.fw-400 {
+    font-weight: var(--fw-400);
+}
+
+.fw-600 {
+    font-weight: var(--fw-600);
+}
+
+.fw-700 {
+    font-weight: var(--fw-700);
+}
+
+.p-0 {
+    padding: 0;
+}
+
+.p-1 {
+    padding: 0.25rem;
+}
+
+.p-2 {
+    padding: 0.5rem;
+}
+
+.p-3 {
+    padding: 1rem;
+}
+
+.p-4 {
+    padding: 1.5rem;
+}
+
+.p-5 {
+    padding: 3rem;
+}
+
+
+
+/* Flex-box utitlies*/
+.d-flex {
+    display: flex;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-space-between {
+    justify-content: space-between;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.gap-1 {
+    gap: 1rem;
+}
+
+.gap-2 {
+    gap: 1.5rem;
+}
+
+
+
+/* element style */
+
+h1 {
+    font-size: var(--fs-700);
+}
+
+.buttons-option > * {
+    border-radius: 100%;
+    transition: 0.50s;
+}
+
+.buttons-option button {
+    background: var(--clr-neutral-900);
+}
+
+.buttons-option button:hover {
+    background: var(--clr-neutral-100);
+    cursor: pointer;
+}
+
+.container {
+    height: 100%;
+}
+
+
+.buttons-option button img {
+    width: 150px;
+    height: 150px;
+}
+
+.pick-result img {
+    width: 100px;
+    height: 100px;
+}
+
+.reset-button {
+    background: var(--clr-neutral-900);
+    color: var(--clr-neutral-100);
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.reset-button:hover {
+    background: var(--clr-neutral-100);
+    color: var(--clr-neutral-900);
+}
