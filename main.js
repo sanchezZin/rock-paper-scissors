@@ -139,22 +139,27 @@ function updateScoreboard() {
     const computerScoreElement = document.querySelector('.js-computer-score');
     const tieCountElement = document.querySelector('.js-tie');
     const gameCountElement = document.querySelector('.js-game-count');
+    
 
     playerScoreElement.innerHTML = `Player Score: ${scoreBoard.playerScore}`;
     computerScoreElement.innerHTML = `Computer Score: ${scoreBoard.computerScore}`;
     tieCountElement.innerHTML = `Ties: ${scoreBoard.ties}`;
     gameCountElement.innerHTML = `Game: ${scoreBoard.gameCount}`;
-
+    
 }
 
 // A function that resets the game
 function resetGame() {
 
     // Resets scoreboard
+    const resultElement = document.querySelector('.js-results');
     scoreBoard.playerScore = 0;
     scoreBoard.computerScore = 0;
     scoreBoard.gameCount = 0;
     scoreBoard.ties = 0;
+
+    resultElement.innerHTML = "";
+
 
     // Remove the item from the local storage
     localStorage.removeItem('scoreboard');
